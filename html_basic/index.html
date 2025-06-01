@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Html page</title>
-    <link href="base.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body class="works_on_smartphone" >
-<header>
-    <ul>
+    <link href="base.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="works_on_smartphone">
+    <header>
+      <img
+        src="data:image/png;base64,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"
+        alt="Elysia"
+        style="height: 50px; vertical-align: middle"
+      />
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="tweets.html">Tweets</a></li>
-    </ul>
-</header>
-<main>
-    <article>
+      </ul>
+    </header>
+    <main>
+      <article>
         <h1>Welcome to my page</h1>
         <h2>About this page</h2>
         <p>This is a basic and valid html page</p>
-        <p>This is my very first webpage using only HTML. I'm learning how to create web content using structure and tags.</p>
-        <p>HTML is a markup language that defines the structure of web pages. It is fun and powerful!</p>
+        <p>
+          This is my very first webpage using only HTML. I'm learning how to
+          create web content using structure and tags.
+        </p>
+        <p>
+          HTML is a markup language that defines the structure of web pages. It
+          is fun and powerful!
+        </p>
 
         <h3>Why I Like HTML</h3>
-        <p>HTML is easy to learn and gives you complete control over how your content appears on the web.</p>
-        <p>It allows me to organize information clearly using headings, paragraphs, and images.</p>
-        
+        <p>
+          HTML is easy to learn and gives you complete control over how your
+          content appears on the web.
+        </p>
+        <p>
+          It allows me to organize information clearly using headings,
+          paragraphs, and images.
+        </p>
+
         <h2>A clickable image</h2>
-        <a href="https://www.flaticon.com/free-icon/webpage_5710188" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/5710/5710188.png" alt="flaticon.com" width="300">
+        <a
+          href="https://www.flaticon.com/free-icon/webpage_5710188"
+          target="_blank"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5710/5710188.png"
+            alt="flaticon.com"
+            width="300"
+          />
         </a>
         <p><a href="tweets.html">visit our tweetpage</a></p>
-    </article>
-    <aside>
+      </article>
+      <aside>
         <p>placeholder to add comment thread later</p>
-    </aside>
-</main>
-<footer>
-    <p>Made by Elys-ia - <a href="https://www.alueducation.com/rwanda/?utm_source=google_pmax&utm_medium=search_performancemax&utm_campaign=prospecting_rwanda&utm_term=IBT&utm_content=pmax&gad_source=1&gad_campaignid=21247245058&gbraid=0AAAAAqAH0tmRSV1wo1Uj1P8r-mMqX7AnE&gclid=Cj0KCQjw9O_BBhCUARIsAHQMjS5aXNFWhI6TXG1wKllceYfWicuGFXqQF3ul61yMzSZp90EsY269dbwaAih-EALw_wcB" target="_blank">ALU EDUCATION</a>.</p>
-</footer>
-</body>
+      </aside>
+    </main>
+    <footer>
+      <p>
+        Made by Elys-ia -
+        <a href="https://github.com/elise-Iss15" target="_blank"
+          ><img
+            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+            alt="GitHub"
+            width="40"
+            style="vertical-align: middle"
+          /> </a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
+
